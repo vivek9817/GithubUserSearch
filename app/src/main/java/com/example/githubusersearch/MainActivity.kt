@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import com.example.githubusersearch.app.GitHubUserSearch
+import com.example.githubusersearch.ui.theme.GitHubUserSearchTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -13,7 +14,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            GitHubUserSearch()
+            GitHubUserSearchTheme() {
+                GitHubUserSearch()
+            }
         }
     }
 }
