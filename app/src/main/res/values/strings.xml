@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GitHubUserSearch</string>
+    <string name="search_by_user">Search for GitHub users</string>
+    <string name="search_by_user_name">Search By UserName</string>
+</resources>
